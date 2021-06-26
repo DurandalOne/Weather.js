@@ -1,0 +1,65 @@
+body {
+  background-color: slategrey;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: antiquewhite;
+  background: url("https://images.pexels.com/photos/2574614/pexels-photo-2574614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+  background-size: cover;
+  /* position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+  padding: 48px */
+}
+
+span {
+  padding: 1vh;
+}
+
+input {
+  text-align: center;
+    padding:10px;
+  border-radius:10px;
+   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+img {
+  -webkit-filter: drop-shadow(0.5px 0.5px 0 white)
+                  drop-shadow(-0.5px -0.5px 0 white);
+  filter: drop-shadow(0.5px 0.5px 0 white) 
+          drop-shadow(-0.5px -0.5px 0 white);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: space-between;
+    padding: 0 7.5vh;
+}
+
+
+#textDisplay{
+
+}
+
+#weather {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#forcast {
+  text-align: left;
+  padding: 0 5vh;
+}
+
+#sevenDayForcast {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+}
