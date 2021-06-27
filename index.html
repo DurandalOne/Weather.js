@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Weather</title>
-</head>
-<body>
-    <div class="container">
-        <div id="textDisplay">
-
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div id="textDisplay"></div>
         <div id="weather">
-          <h4>Current Weather</h4>
-          <button id="locationButton">Use Current Location</button>
+          <p class="current-weather__header">Search Weather</p>
+          <p class="current-weather__search-text">Use Location</p>
+          <i
+            class="fa fa-map-marker"
+            style="font-size: 42px"
+            id="locationButton"
+          ></i>
           <span></span>
-          <input type="text" name="weatherEntry" id="weatherEntry" placeholder="Enter City Here">
+          <input
+            type="text"
+            name="weatherEntry"
+            id="weatherEntry"
+            placeholder="Enter City Here"
+          />
+          <span></span>
+          <p id="tempUnits">Toggle between &deg;C and &deg;F</p>
           <span></span>
           <button type="button" id="submitButton">Search</button>
           <span></span>
         </div>
+      </div>
+      <div>
+        <h2 id="forcast">7-Day Forcast</h2>
+        <div id="sevenDayForcast"></div>
+      </div>
     </div>
-    <div>
-      <h2 id=forcast>7-Day Forcast</h2>
-    <div id= "sevenDayForcast">
-
-    </div>
-    </div>
-</body>
+  </body>
 </html>
