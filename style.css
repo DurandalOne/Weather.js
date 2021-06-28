@@ -113,22 +113,35 @@ img {
 
 #locationButton:hover {
   color: #000000bb;
-  filter: drop-shadow(0.5px 0.5px 0 white) drop-shadow(-0.5px -0.5px 0 white);
+  filter: drop-shadow(0.5px 0.5px 0 white) 
+          drop-shadow(-0.5px -0.5px 0 white);
 }
 
 @media (max-width: 750px), (max-height: 750px) {
-body{
-  display: flex;
-  justify-content: center;
-}
+  body{
+    display: flex;
+    justify-content: center;
+  }
 
   html {
     font-size: 50%;
   }
+
 }
 
 @media (max-width: 900px), (max-height: 750px) {
   #sevenDayForcast {
     justify-content: space-around;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #textDisplay {
+    text-align: center;
   }
 }
