@@ -20,6 +20,4 @@ Deployed with [github pages](https://pages.github.com/).
 
 ## Get started
 
-## Get started
-
 No dependencies - to run locally, open the project directory with VSCode. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (if you haven't already) and click "Go Live" in the blue bar at the bottom of the screen. This will open a live development server in your browser that updates in response to code changes.
