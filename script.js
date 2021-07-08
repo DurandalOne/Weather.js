@@ -146,6 +146,8 @@ async function displayData(input) {
   
   `;
 
+  // Maps though the 7 day forcast data, ignoring the 0 index as it contains todya's forcast, the first API call
+  // gets the weather for the current hour.
   sevenDayForcast.innerHTML = forcastData
     .slice(1)
     .map((data) => {
