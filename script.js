@@ -39,12 +39,10 @@ async function getWeather(location) {
   });
   const weatherJSON = await weatherData.json();
 
-  // console.log(weatherJSON);
-
   let lat = weatherJSON.coord.lat;
   let lon = weatherJSON.coord.lon;
 
-  //Uses the latitude and longitude from weatherData JSON to call the OpenWeather One Call API to retrieve 7 day forcast
+  //Calls a second API using the latitude and longitude from weatherData JSON to call the OpenWeather One Call API to retrieve 7 day forcast
   const forcastJSON = await fetch(
     `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=${tempSelector}&APPID=775a90e01716794019579760d64f3e7a`
   ).then((response) => {
@@ -77,7 +75,7 @@ async function getWeather(location) {
 
 const forcastTime = () => {};
 
-//sets the input value to that of the input box
+//sets the input value to that of the location input box
 function searchData() {
   input = `q=${textEntry.value}`;
 }
@@ -119,6 +117,8 @@ async function displayData(input) {
 
   let unitDisplay;
   celcius ? (unitDisplay = "&deg;C") : (unitDisplay = "&deg;F");
+
+  //The open weather API returns the time as a UTC timestamp. The function format_time converts this to the local time of the location from the API call.
 
   utcTime = (currentData.time + currentData.timezone) * 1000;
 

@@ -111,6 +111,12 @@ img {
   cursor: pointer;
 }
 
+#tempUnits:hover {
+  color: #000000bb;
+  filter: drop-shadow(0.5px 0.5px 0 white) 
+          drop-shadow(-0.5px -0.5px 0 white);
+}
+
 #locationButton:hover {
   color: #000000bb;
   filter: drop-shadow(0.5px 0.5px 0 white) 
@@ -124,7 +130,7 @@ img {
   }
 
   html {
-    font-size: 50%;
+    font-size: .7em;
   }
 
 }
