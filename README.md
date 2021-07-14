@@ -4,15 +4,15 @@ A web application that generates the current weather as well as a seven day forc
 
 ## Lessons Learned
 
-This is the first project in which I used the Fetch API with async/await. I found the idea of async/await relatively straightforward, what I did struggle with to start with is using .then to have to parse the JSON. Once I got a hang of it I ended up learning a lot about promises, async/await adn error handling. I enjoyed being able to manipulate the data from the JSON and display it in a meaningful way.
+This is the first project in which I used the Fetch API with async/await. I found the idea of async/await relatively straightforward, what I did struggle with to start with is using .then to have to parse the JSON. Once I got a hang of it I ended up learning a lot about promises, async/await and error handling. I enjoyed being able to manipulate the data from the JSON and display it in a meaningful way.
 
 ## Potential Future Features
 
-- I would like to rebuild from the group up using react, I think this would be the ideal candidate for using components and state.
+- I would like to rebuild from the group up using React, I think this would be the ideal candidate for using components and state.
 
 - Further to the above, I am aware that my API key is public in this project. I have researched hiding the API in vanilla JavaScript and was unable to find a way to accomplish this. I did find that you are able to hide the key using an .env file in React, this is something I would want to use going forward.
 
-- I've noticed when swapping between celsius and fahrenheit the seven day forcast will change to a different result. Checking though the data, this is correct, a seperate data call is made for either temperature and sometimes the OpenWeather API has completly different results for each. To make things less complicated for the user, rather than making a new API call, the temperate could just be converted using a calculation.
+- I've noticed when swapping between celsius and fahrenheit the seven day forcast will change to a different result. Checking though the data, this is correct, a seperate API call is made for either temperature and sometimes the OpenWeather API has completly different results for each. To make things less complicated for the user, rather than making a new API call, the temperate could just be converted using a calculation.
 
 ## Deployment
 
